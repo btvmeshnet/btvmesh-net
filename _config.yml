@@ -6,13 +6,13 @@ sass:
   style: :compressed
 
 # Site settings
-title: Toronto Mesh
-email: hello@tomesh.net
-description: We help communities create better networks with open source and peer-to-peer technologies that promote digital literacy and privacy.
+title: Burlington Mesh
+email: hello@btvmesh.net
+description: We are building a grassroots, local alternative to traditional internet service in Burlington, Vermont.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tomesh.net" # the base hostname & protocol for your site
-github_username: tomeshnet
-twitter_username: tomeshnet
+url: "https://btvmesh.net" # the base hostname & protocol for your site
+github_username: btvmeshnet
+twitter_username: btvmeshnet
 
 # Collections
 collections:

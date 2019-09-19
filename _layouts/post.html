@@ -46,7 +46,7 @@ layout: default
             DTEND:'{{ event_end }}'
           }
         </script>
-        {% capture googleCalendarLink %}text={{ event_title | url_encode }}&location={{ event_location | url_encode }}&dates={{ event_start }}/{{ event_end }}&details={{ event_description | url_encode }}&ctz=America/Toronto&sf=true&output=xml{% endcapture %}
+        {% capture googleCalendarLink %}text={{ event_title | url_encode }}&location={{ event_location | url_encode }}&dates={{ event_start }}/{{ event_end }}&details={{ event_description | url_encode }}&ctz=America/New York&sf=true&output=xml{% endcapture %}
 
         <button download="event.ics" class="compact" id="event-add-button">{% include_absolute _icons/calendar-plus-o.svg class:icon %}&nbsp;&nbsp;Add to Calendar (.ics)</button>
         <a class="button compact" target="_blank" rel="noopener" href="https://www.google.com/calendar/render?action=TEMPLATE&{{ googleCalendarLink }}">

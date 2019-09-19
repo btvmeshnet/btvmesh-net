@@ -5,8 +5,8 @@ export LC_ALL=en_US.UTF-8
 
 set -e
 
-site="/var/www/tomesh.net/html"
-source="/var/www/jekyll-hook/tomeshnet/tomesh.net/master/code"
+site="/var/www/btvmesh.net/html"
+source="/var/www/jekyll-hook/btvmeshnet/btvmesh.net/master/code"
 
 cd $source
 

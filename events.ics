@@ -2,10 +2,10 @@
 ---
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID://Toronto Mesh/Events//NONSGML v1.0//EN
+PRODID://Burlington Mesh/Events//NONSGML v1.0//EN
 METHOD:PUBLISH
 BEGIN:VTIMEZONE
-TZID:America/Toronto
+TZID:America/New York
 BEGIN:DAYLIGHT
 TZOFFSETFROM:-0500
 TZOFFSETTO:-0400
@@ -22,14 +22,14 @@ RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
 END:STANDARD
 END:VTIMEZONE
 {% for post in site.posts limit:20 %}BEGIN:VEVENT
-UID:{{ post.date | date: "%Y%m%d" }}@tomesh.net
-ORGANIZER;CN="Toronto Mesh":MAILTO:{{ site.email }}
+UID:{{ post.date | date: "%Y%m%d" }}@btmesh.net
+ORGANIZER;CN="Burlington Mesh":MAILTO:{{ site.email }}
 LOCATION:{{ post.location }}
 SUMMARY:{{ post.title }}
 URL:{{ post.url|strip | prepend: site.url }}
 DESCRIPTION;ALTREP="{{ post.text|strip }} \n\nFor details, link here: {{ post.url|strip | prepend: site.url }}":{{ post.text|strip }} \n\nFor details, link here: {{ post.url|strip | prepend: site.url }}
-DTSTART;TZID=America/Toronto:{{ post.date | date: "%Y%m%d" }}T{{ post.startTime | date:"%H%M%S" }}
-DTEND;TZID=America/Toronto:{{ post.date | date: "%Y%m%d" }}T{{ post.endTime | date:"%H%M%S" }}
+DTSTART;TZID=America/New York:{{ post.date | date: "%Y%m%d" }}T{{ post.startTime | date:"%H%M%S" }}
+DTEND;TZID=America/New York:{{ post.date | date: "%Y%m%d" }}T{{ post.endTime | date:"%H%M%S" }}
 DTSTAMP:{{ post.date | date: "%Y%m%d" }}T{{ post.date | date:"%H%M%S" }}
 END:VEVENT
 {% endfor %}END:VCALENDAR
